@@ -1,0 +1,13 @@
+@use "base/reset";
+@use "base/typography";
+
+@use "layout/container";
+@use "layout/header";
+@use "layout/footer";
+
+@use "pages/cart.scss";
+@use "pages/categories";
+@use "pages/home";
+@use "pages/gallery";
+@use "pages/products";
+@use "pages/productview";

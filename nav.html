@@ -1,0 +1,70 @@
+<div class="container container__lg">
+  <div class="navbar__logo">
+    <a href="index.html"
+      ><img class="logotype" src="images/navbar/logo.svg" alt="navbar__logo"
+    /></a>
+    <a href="categories.html"
+      ><button>
+        <img src="images/navbar/semi-line.svg" alt="semi-line" />Каталог
+      </button></a
+    >
+    <div class="navbar__input">
+      <img src="images/navbar/search-icon.svg" alt="search-icon" />
+      <input type="text" placeholder="Поиск" />
+    </div>
+  </div>
+  <div class="navbar__menus">
+    <ul class="navbar__list">
+      <li><a href="#stock">Акции</a></li>
+      <li><a href="cart.html">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li>
+        <a href="cart.html"
+          ><img src="images/navbar/shopping-bag.svg" alt="shopping-bag"
+        /></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="container container__xs">
+  <div class="navbar__logo">
+    <div class="border">
+      <button onclick="openNavbar()">
+        <img src="images/navbar/semi-line-reverse.svg" alt="semi-line" />
+      </button>
+    </div>
+    <div class="navbar__input border">
+      <img src="images/navbar/search-icon.svg" alt="search-icon" />
+      <input type="text" placeholder="Поиск" />
+    </div>
+    <div class="border percent">
+      <p>%</p>
+    </div>
+    <div class="border">
+      <a href="#"
+        ><img src="images/navbar/shopping-bag.svg" alt="shopping-bag"
+      /></a>
+    </div>
+  </div>
+  <div class="navbar__menus" id="navbar-responsive">
+    <ul class="navbar__list">
+      <li><a href="#stock">Акции</a></li>
+      <li><a href="#delivery">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#gallery">Галерея</a></li>
+      <li><a href="#">Отзывы</a></li>
+    </ul>
+    <div class="navbar__footer">
+      <p>Телефон</p>
+      <h1>+7 861 204 24 46</h1>
+
+      <img src="images/navbar/icons.svg" alt="" />
+    </div>
+    <button onclick="closeNavbar()">
+      <img src="images/navbar/close.svg" alt="class" />
+    </button>
+  </div>
+</div>

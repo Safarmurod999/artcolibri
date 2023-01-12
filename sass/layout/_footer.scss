@@ -1,0 +1,186 @@
+@use "../abstract/mixins";
+@use "../abstract/variables" as var;
+@use "../base/reset";
+@use "../layout/container";
+
+.footer{
+    padding: 30px 0;
+    text-align: center;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4{
+            @include mixins.font(700,18px,23.4px,#000);
+            margin-bottom: 15px;
+        }
+        h2{
+            @include mixins.font(700,31px,40.3px,#000);
+            margin-bottom: 21px;
+        }
+
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h5{
+            @include mixins.font(700,18px,23.4px,#000);
+            margin-bottom: 15px;
+        }
+        h3{
+            @include mixins.font(700,27px,35.1px,#000);
+            margin-bottom: 20px;
+        }
+        p{
+            @include mixins.font(500,10px,13.4px,#000);
+            margin-bottom: 15px;
+        }
+        h4{
+            @include mixins.font(600,14px,18.2px,#000);
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width:600px) {
+    .footer{
+    padding: 30px 0;
+    text-align: left;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+
+        h4{
+            
+            @include mixins.font(700,18px,23.4px,#000);
+            margin-bottom: 15px;
+        }
+        h2{
+            @include mixins.font(700,31px,40.3px,#000);
+            margin-bottom: 21px;
+        }
+
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        h5{
+            @include mixins.font(700,18px,23.4px,#000);
+            margin-bottom: 15px;
+        }
+        h3{
+            @include mixins.font(700,27px,35.1px,#000);
+            margin-bottom: 20px;
+        }
+        p{
+            @include mixins.font(500,10px,13.4px,#000);
+            margin-bottom: 15px;
+        }
+        h4{
+            @include mixins.font(600,14px,18.2px,#000);
+            margin-bottom: 15px;
+        }
+    }
+}
+}
+
+@media (min-width:900px){
+    .footer{
+        padding: 40px 0;
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 126px;
+        }
+        &__left{
+    
+            h4{
+                
+                @include mixins.font(700,30px,42px,#000);
+                margin-bottom: 25px;
+            }
+            h2{
+                @include mixins.font(600,50px,71px,#000);
+                margin-bottom: 33px;
+            }
+    
+        }
+        &__right{
+            h5{
+                @include mixins.font(700,30px,42px,#000);
+                margin-bottom: 25px;
+            }
+            h3{
+                @include mixins.font(600,30px,42px,#000);
+                margin-bottom: 20px;
+            }
+            p{
+                @include mixins.font(500,18px,23.4px,#000);
+            }
+            h4{
+                @include mixins.font(600,24px,31.2px,#000);
+            }
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .footer{
+        padding: 40px 0;
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 126px;
+        }
+        &__left{
+    
+            h4{
+                
+                @include mixins.font(700,40px,52px,#000);
+                margin-bottom: 25px;
+            }
+            h2{
+                @include mixins.font(600,70px,91px,#000);
+                margin-bottom: 33px;
+            }
+    
+        }
+        &__right{
+            h5{
+                @include mixins.font(700,40px,52px,#000);
+                margin-bottom: 25px;
+            }
+            h3{
+                @include mixins.font(600,40px,52px,#000);
+                margin-bottom: 20px;
+            }
+            p{
+                @include mixins.font(500,18px,23.4px,#000);
+            }
+            h4{
+                @include mixins.font(600,24px,31.2px,#000);
+            }
+        }
+    }
+}

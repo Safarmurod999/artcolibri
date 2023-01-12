@@ -1,0 +1,49 @@
+@use "../abstract/mixins";
+@use "../abstract/variables" as var;
+@use "../base/reset";
+@use "../layout/container";
+
+.popular {
+    text-align: left;
+  &__text {
+    @include mixins.font(600, 16px, 130%, #000);
+    margin-bottom: 30px;
+  }
+  &__filter {
+    margin-bottom: 40px;
+    @include mixins.flex-box(row, start, center);
+    gap: 30px;
+    label {
+      @include mixins.font(600, 20px, 130%, #000);
+    }
+    input {
+      border: 1px solid #aaa;
+      border-radius: 7px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+      color: #acacac;
+      padding: 15px 15px;
+      width: 103px;
+      height: 42px;
+    }
+    input[type="checkbox"]{
+        width: 40px;
+    }
+    select{
+        border: 1px solid #aaa;
+        border-radius: 7px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #acacac;
+        padding: 5px 15px;
+        width: 219px;
+        height: 42px;
+    }
+  }
+}

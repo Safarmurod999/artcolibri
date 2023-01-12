@@ -1,0 +1,18 @@
+@mixin flex-box($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin grid-box($repeat,$gap){
+    display: grid;
+    grid-template-columns: repeat($repeat,1fr);
+    grid-gap: $gap;
+}
+
+@mixin font($weight,$size,$height,$color){
+    font: normal $weight $size 'Montserrat';
+    line-height: $height;
+    color: $color;
+}
