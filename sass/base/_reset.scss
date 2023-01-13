@@ -45,3 +45,14 @@ html{
     width: 30px;
     height: 30px;
   }
+
+  .linked{
+    display: none;
+  }
+
+  @media (min-width:768px){
+    .linked {
+        display: inline-block;
+        margin-right: 30px;
+    }
+  }

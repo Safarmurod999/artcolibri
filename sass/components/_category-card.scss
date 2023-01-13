@@ -34,7 +34,11 @@
 }
 @media (min-width:900px){
     .categories{
-
+&__title{
+    a{
+        display: inline-block;
+    }
+}
         &__row{
             grid-template-columns: repeat(4,1fr);
             grid-gap: 30px;
